@@ -5,7 +5,7 @@ def juego_adivina_numero(maximo):
     numero_intentos = 1
     vidas = int(input("¿Cuántas vidas desea tener?(entre 10 y 3): "))
     while vidas < 3 or vidas > 10:
-        print('No te flipes, elije entre 10 y 3 vidas.')
+        print('No te flipes, elige entre 10 y 3 vidas.')
         vidas = int(input("¿Cuántas vidas desea tener?(entre 10 y 3): "))
     sigue_jugando = True
     while sigue_jugando:
