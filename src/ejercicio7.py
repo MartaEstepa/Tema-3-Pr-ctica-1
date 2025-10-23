@@ -3,7 +3,10 @@ import random
 def juego_adivina_numero(maximo):
     numero_secreto = random.randint(1,maximo)
     numero_intentos = 1
-    vidas = 10
+    vidas = int(input("¿Cuántas vidas desea tener?(entre 10 y 3): "))
+    while vidas < 3 or vidas > 10:
+        print('No te flipes, elije entre 10 y 3 vidas.')
+        vidas = int(input("¿Cuántas vidas desea tener?(entre 10 y 3): "))
     sigue_jugando = True
     while sigue_jugando:
         if vidas == -1:
